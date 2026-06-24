@@ -56,12 +56,12 @@
 
 '''''''append '''
 
-# list = [5, 4, 3, 2, 1]
-# print(list)
-# print(f'Length of list: {len(list)}')
-# list.append(6)
-# print(list)
-# print(f'Length  of list:{len(list)}')
+list = [5, 4, 3, 2, 1]
+print(list)
+print(f'Length of list: {len(list)}')
+list.append(6)
+print(list)
+print(f'Length  of list:{len(list)}')
 '''   f' kjSnjshk '    '''# we an use any thing in line with f'' like list, tuple...etc
 
 '''''''''''''''''''''''insert '''
@@ -100,4 +100,30 @@
 # for i in range(10):
 #   my_list[i] += 1
   
+# print(my_list)
+
+'''''problem '''
+# my_list=[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# sum = 0
+# for index in range(len(my_list)):  # or for element in mylist:
+#     sum +=  my_list[index]
+
+# print("Sum :", sum)
+
+
+'''''problem [ copying variable into another variable {swaping number}]'''
+# a = 10
+# b = 20
+# print("a:", a)
+# print("b:", b)
+# #variable 1 , variable 2 = variable 2 ,variable 1
+# a, b = b, a
+# print("a:", a)
+# print("b:", b)
+
+'''''problem [ copying element into another element {swaping element }]'''
+# my_list=[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# print(my_list)
+# my_list[0], my_list[4] = my_list[4], my_list[0]
+# my_list[1], my_list[3] = my_list[3], my_list[1]
 # print(my_list)
