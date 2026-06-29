@@ -55,16 +55,15 @@
 
 
 '''''''append '''
-
-list = [5, 4, 3, 2, 1]
-print(list)
-print(f'Length of list: {len(list)}')
-list.append(6)
-print(list)
-print(f'Length  of list:{len(list)}')
+# list = [5, 4, 3, 2, 1]
+# print(list)
+# print(f'Length of list: {len(list)}')
+# list.append(6)
+# print(list)
+# print(f'Length  of list:{len(list)}')
 '''   f' kjSnjshk '    '''# we an use any thing in line with f'' like list, tuple...etc
 
-'''''''''''''''''''''''insert '''
+'''''''''''''''''''''''insert { index, element}'''
 # numbers = [111, 7, 2, 1]
 # print(len(numbers))
 # print(numbers)
@@ -127,3 +126,67 @@ print(f'Length  of list:{len(list)}')
 # my_list[0], my_list[4] = my_list[4], my_list[0]
 # my_list[1], my_list[3] = my_list[3], my_list[1]
 # print(my_list)
+
+'''''problem '''
+# lst = ["D", "F", "a", "Z"]
+# lst.sort()
+
+# print(lst)
+# print("A" > "a")
+
+'''''problem '''
+# a = 3
+# b = 1
+# c = 2
+# lst = [ a, c, b]
+# lst.sort()
+# print(lst)
+
+'''''problem '''
+# a = "A"
+# b = "B"
+# c = "C"
+# d = " "
+# lst = [ a, c, b, d]
+# lst.reverse()
+# print(lst)
+
+'''''problem '''
+# a = 1
+# b = a
+# a = 2
+# print(a)
+# print(b)
+'''''''''''''''but now same problem with list'''
+# list_1 = [1]
+# list_2 = list_1 
+# #list_2 = list_1 ne copy nahi banayi. Dono variables same list ko point kar rahe hain.
+# list_1[0] = 2
+# print(list_2)
+
+'''now we will copy the element ''' 
+# from slicing 
+# list_1 = [1]
+# list_2 = list_1[:] 
+# list_1[0] = 2
+# print(list_2)
+
+'''same concept with more example'''
+# from slicing 
+# list_1 = [1, 2, 3, 4]
+# list_2 = list_1[0:2] # n-1 chalta hai ye bhi 
+# list_1[0] = 2
+# print(list_2)
+'''same concept with more example'''
+# lst = [10, 8, 6, 4, 2]
+# lst_2 = lst[1:3] # n-1
+# print(lst_2)
+
+# lst_2 = lst[1:-1]
+# print(lst_2)
+
+# lst_2 = lst[-1:1]
+# print(lst_2)
+
+""" to print asci vale """
+print(ord("A"))
