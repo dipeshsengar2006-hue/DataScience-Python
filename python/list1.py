@@ -188,5 +188,67 @@
 # lst_2 = lst[-1:1]
 # print(lst_2)
 
-""" to print asci vale """
-print(ord("A"))
+""""""""""""""""""""""""" to print asci vale """ # use ord
+# print(ord("A"))
+
+
+
+'''''problem  slicing'''
+# lst = [10, 8, 6, 4, 2]
+# del lst[:] # n-1
+# print(lst)
+
+'''''problem '''
+# lst = [10, 8, 6, 4, 2]
+# del lst
+# print(lst)
+'''''problem '''
+# lst = [10, 8, 6, 4, 2]
+# print(5 in lst)
+# print(5 not in lst)
+# print(12 in lst)
+
+'''''problem  finding greatest number '''
+# lst = [ 17, 3, 11, 5, 1, 9, 7, 15, 13]
+# lst.sort()
+# print(lst)
+# print("maximum number is : ", lst[-1])
+
+'''''''''''''with logic'''
+# my_list = [ 17, 3, 11, 5, 1, 9, 7, 15, 13]
+# largest = my_list[0]
+# for index in range(len(my_list)): #0. 1. 2. 3. 4. 5. 6. 7. 8
+#     # print(index) # for index
+#     # print(my_list[index]) # for element 
+#     # print(index, "->", my_list[index])
+#     if largest < my_list[index]:
+#         largest = my_list[index]
+
+# print(largest)
+'''''''''''''with logic 2'''
+    
+# my_list = [ 17, 3, 11, 5, 1, 9, 7, 15, 13]
+# largest = my_list[0]
+# largest = my_list[0]
+ 
+# for element in my_list:
+#     if largest < element:
+#         largest = element
+   
+# print(largest)
+
+my_list = [ 17, 3, 11, 5, 1, 9, 7, 15, 13]
+found = -1
+for index in range(len(my_list)):
+    if my_list[index] == 5:
+        print("5 is found at ", index)
+        found = index
+        break
+    if found < 0:
+        print("Element not found")
+    else:
+        print("Element is found at :", found)
+
+        
+
+
