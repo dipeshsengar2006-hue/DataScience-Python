@@ -1,127 +1,164 @@
 '''''''''''''''''''''''''''''''''''''''''git commands '''
-# git add*
+# git add *
 # git commit -m "Explaint the commit here"
 # git push
 
 
+# ● Variable  - myOfficialName
+# ● Function  - myOfficialName()
+# ● Class     - MyOfficialName
+# ● Object    - myOfficialNameObj  
+# ● Constants- MY_OFFICIAL_NAME
 
-'''print("hello")
+'''Python Data types for a variable'''
+# Text Type:      - str
+# Numeric Types:  - int, float, complex 
+# Sequence Types: - list, tuple, range 
+# Mapping Type:   - dict
+# Set Types:      - set, frozenset
+# Boolean Type:   - bool
+# NoneType:       - NoneType
 
-name = "Dipesh"
-profession = "software developer"
-experience = 10
-print("Hello, I am", name,".I am a ", profession,"professionally.And I have around", experience," years of experience with it!")
-'''
-'''
-x = 5 
-print(x,type(x))
-x = "Hello World"
-print(x,type(x))
-x = 20
-print(x,type(x))
-x = 20.5
-print(x,type(x))
-x = ["apple", "banana", "cherry"]
-print(x,type(x))
-x = ("apple", "banana", "cherry")
-print(x,type(x))
-x = range(6)
-print(x,type(x))
-x = {"name" : "John", "age" : 36}
-print(x,type(x))
-x = {"apple", "banana", "cherry"}
-print(x,type(x))
-x = frozenset({"apple", "banana", "cherry"})
-print(x,type(x))
-x = True
-print(x,type(x))
-x = b"Hello"
-print(x,type(x))
-x = bytearray(5)
-print(x,type(x))
-x = memoryview(bytes(5))
-print(x,type(x))
-x = None
-print(x,type(x))
-'''
-'''
-print("10 + 2 = ", 10 + 2)
-print("10 - 2 = ", 10 - 2)
-print("10 * 2 = ", 10 * 2)
-print("10 / 2 = ", 10 / 2)
-print("10 % 2 = ", 10 % 2)
-print("10 // 2 = ", 10 // 2)
-print("10 ** 2 = ", 10 ** 2)
-'''
-'''
-x=5
-print(x)
-x += 3
-print(x)
-x -= 2
-print(x)
-x *= 3
-print(x)
-x /= 2
-print(x)
-x //= 3
-print(x)
-x **= 2
-print(x)
-x = 5
-x %= 3
-print(x)
-x |= 2
-print(x)
-x ^= 3
-print(x)
-'''''
-'''''
-a = 10
-b = 20
-print("a == b: ", a == b)
-print("a == 10: ", a == 10)
-print("a != b: ", a != b)
-print("a != 10: ", a != 10)
-print("a > b: ", a > b)
-print("a < b: ", a < b)
-print("a <= b: ", a <= b)
-print("a >= b: ", a >= b)
-print("a >= 10: ", a >= 10)
-'''''
-'''''
-x = 3
-print(x < 5 and x < 10)
-print(x < 5 or x < 4)
-print(not(x < 5 and x < 10))
-'''''
-'''''
-x = 3
-y = 4
-print(x is y)
-print(x is not y)
-'''''
-'''''
-x = ["Maruti", "BMW"]  # becz x & y are carring diff. address 
-y = ["Maruti", "BMW"]
-z = x
-print(x is y) #identity operator 
-print(x is z)
-print(y is z)
-'''''
-'''
-x = 10  # 0000 1010
-y = 20  # 0001 0100
-print(x & y) #0
-print(x | y) #30
-print(x ^ y)
-print(~x)
-print(~y)
-print(x << 2)    #000 1010 => 0010 1000
-print(y << 2)
-print(x >> 2)
-print(y >> 2)   
-'''
+'''''''Python supports these operator types:'''
+# ○ Arithmetic Operators 
+# ○ Assignment operators 
+# ○ Comparison operators 
+# ○ Logical operators 
+# ○ Identity operators 
+# ○ Membership operators 
+# ○ Bitwise operators
+
+''''printing Hello '''
+#print("hello")
+
+'''● Precedence of the Arithmetic operators '''
+# ○ P – Parentheses 
+# ○ E – Exponentiation 
+# ○ M – Multiplication (Multiplication and division have the same precedence) 
+# ○ D – Division 
+# ○ A – Addition (Addition and subtraction have the same precedence) 
+# ○ S – Subtraction 
+# ○ 1 + 3 - 5 / 7 * 3 (2/3)
+
+'''operators'''
+# name = "Dipesh"
+# profession = "software developer"
+# experience = 10
+# print("Hello, I am", name,".I am a ", profession,"professionally.And I have around", experience," years of experience with it!")
+# '''
+# '''
+# x = 5 
+# print(x,type(x))
+# x = "Hello World"
+# print(x,type(x))
+# x = 20
+# print(x,type(x))
+# x = 20.5
+# print(x,type(x))
+# x = ["apple", "banana", "cherry"]
+# print(x,type(x))
+# x = ("apple", "banana", "cherry")
+# print(x,type(x))
+# x = range(6)
+# print(x,type(x))
+# x = {"name" : "John", "age" : 36}
+# print(x,type(x))
+# x = {"apple", "banana", "cherry"}
+# print(x,type(x))
+# x = frozenset({"apple", "banana", "cherry"})
+# print(x,type(x))
+# x = True
+# print(x,type(x))
+# x = b"Hello"
+# print(x,type(x))
+# x = bytearray(5)
+# print(x,type(x))
+# x = memoryview(bytes(5))
+# print(x,type(x))
+# x = None
+
+'''○ Arithmetic Operators'''
+# print(x,type(x))
+# '''
+# '''
+# print("10 + 2 = ", 10 + 2)
+# print("10 - 2 = ", 10 - 2)
+# print("10 * 2 = ", 10 * 2)
+# print("10 / 2 = ", 10 / 2)
+# print("10 % 2 = ", 10 % 2)
+# print("10 // 2 = ", 10 // 2)
+# print("10 ** 2 = ", 10 ** 2)
+
+'''○ Assignment operators'''
+# x=5
+# print(x)
+# x += 3
+# print(x)
+# x -= 2
+# print(x)
+# x *= 3
+# print(x)
+# x /= 2
+# print(x)
+# x //= 3
+# print(x)
+# x **= 2
+# print(x)
+# x = 5
+# x %= 3
+# print(x)
+# x |= 2
+# print(x)
+# x ^= 3
+# print(x)
+
+'''○ Comparison operators'''
+# a = 10
+# b = 20
+# print("a == b: ", a == b)
+# print("a == 10: ", a == 10)
+# print("a != b: ", a != b)
+# print("a != 10: ", a != 10)
+# print("a > b: ", a > b)
+# print("a < b: ", a < b)
+# print("a <= b: ", a <= b)
+# print("a >= b: ", a >= b)
+# print("a >= 10: ", a >= 10)
+
+'''○ Logical operators '''''
+# x = 3
+# print(x < 5 and x < 10)
+# print(x < 5 or x < 4)
+# print(not(x < 5 and x < 10))
+
+'''○ Identity operators '''''
+
+# x = 3
+# y = 4
+# print(x is y)
+# print(x is not y)
+'''○ Membership operators '''
+# x = ["Maruti", "BMW"]  # becz x & y are carring diff. address 
+# y = ["Maruti", "BMW"]
+# z = x
+# print(x is y) #identity operator 
+# print(x is z)
+# print(y is z)
+'''○ Bitwise operators '''
+# x = 10  # 0000 1010
+# y = 20  # 0001 0100
+# print(x & y) #0
+# print(x | y) #30
+# print(x ^ y)
+# print(~x)
+# print(~y)
+# print(x << 2)    #000 1010 => 0010 1000
+# print(y << 2)
+# print(x >> 2)
+# print(y >> 2)   
+
+
+'''practice question'''
 # name = input("Enter your name: ")
 # print("Hello ", name)
 # age = input("Enter your age: ")
@@ -131,31 +168,48 @@ print(y >> 2)
 # email = input("Enter your email: ")
 # print("email ", email)
 
+'''practice question'''
 # x = int(input("Enter first value for sum: ")) #typecasting (int lagana starting mai = typecasting specially before + )
 # y = int(input("Enter second value for sum: ")) # it is important to both be int or strng 
 # z = x + y
 # print("sum: ", z)
-
+'''practice question'''
 # x = input("Enter value of x : ")
 # y = input("Enter value of y : ")
 # z = int(x) + int(y)
 # print("sum: ", z)
 
-#'''
-# Write a program to calculate hypotenuse between to sides
+
+
+name = input('Enter your name: ')
+age = int(input('Enter your age: '))
+gpa = float(input('Enter your gpa: '))
+print(name)
+print(type(name))
+print(age)
+print(type(age))
+print(gpa)
+print(type(gpa))
+
+'''practice question'''
+''' Write a program to calculate hypotenuse between to sides'''
 # p = float(input("Enter value of perpendicular : "))
 # b = float(input("Enter value of base : "))
 # H = ((p**2 + b**2)**(1/2))
 # print("H is : ", H)
+'''practice question'''
+# print("+ - - - - - - - - - - +")
+# print("|                     |")
+# print("|                     |")
+# print("|                     |")
+# print("|                     |")
+# print("|                     |")
+# print("|                     |")
+# print("+ - - - - - - - - - - +")
 
-# print("+ - - - - - - - - - - +")
-# print("|                     |")
-# print("|                     |")
-# print("|                     |")
-# print("|                     |")
-# print("|                     |")
-# print("|                     |")
-# print("+ - - - - - - - - - - +")
+# str = "-" * 10
+# print(str) 
+
 
 # print("+" + "-" * 10 + "+")
 # print(("|" + " " * 10 + "|\n" ) * 5,end="")
@@ -539,8 +593,38 @@ print(y >> 2)
 # print(my_list)
 
 '''problem '''
-my_list=[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-for i in range(10):
-  my_list[i] += 1
+# my_list=[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# for i in range(10):
+#   my_list[i] += 1
   
-print(my_list)
+# print(my_list)
+
+
+'''''problem '''
+# my_list=[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# sum = 0
+# for index in range(len(my_list)):  # or for element in mylist:
+#     sum +=  my_list[index]
+
+# print("Sum :", sum)
+
+
+'''''problem [ copying variable into another variable {swaping number}]'''
+# a = 10
+# b = 20
+# print("a:", a)
+# print("b:", b)
+# #variable 1 , variable 2 = variable 2 ,variable 1
+# a, b = b, a
+# print("a:", a)
+# print("b:", b)
+
+'''''problem [ copying element into another element {swaping element }]'''
+# my_list=[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# print(my_list)
+# my_list[0], my_list[4] = my_list[4], my_list[0]
+# my_list[1], my_list[3] = my_list[3], my_list[1]
+# print(my_list)
+
+"""""""'''''''''''''''''''sorting"""
+list1 = [8, 10, 6, 2, 4]
