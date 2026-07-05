@@ -57,19 +57,30 @@
 
 
 '''''''reverse the list with logic'''
-'''0 = -1'''
-'''1 = -2'''
-'''formula  = { -1 * [index + 1]}'''
-''' for index = 0 we got value (-1) and for 2  we got (-2)'''
-lst = [5, 3, 1, 2, 4]
-print(lst)
-count = 0
-for index in range(len(lst)//2):
-    count += 1
-    lst[index], lst[-1 * (index +1)] = lst[-1 * (index + 1)], lst[index]
-print(lst)
-print("loops are rummimg for : ", count,"Times" )
-    
+# '''0 = -1'''
+# '''1 = -2'''
+# '''formula  = { -1 * [index + 1]}'''
+# ''' for index = 0 we got value (-1) and for 2  we got (-2)'''
+# lst = [5, 3, 1, 2, 4]
+
+
+# print(lst)
+# count = 0
+# for index in range(len(lst)//2):
+#     count += 1
+#     lst[index], lst[-1 * (index +1)] = lst[-1 * (index + 1)], lst[index]
+# print(lst)
+# print("loops are rummimg for : ", count,"Times" )
+
+'''from 2nd formula'''
+# lst = [5, 3, 1, 2, 4]
+# print(lst)
+# count = 0
+# for index in range(len(lst)//2):
+#     count += 1
+#     lst[index], lst[len(lst) - (index +1)] = lst[len(lst) - (index + 1)], lst[index]
+# print(lst)
+# print("loops are rummimg for : ", count,"Times" )
 ''''''''''reverse the list without logic'''
 # my_list = [8, 10, 6, 2, 4]
 # my_list.reverse()

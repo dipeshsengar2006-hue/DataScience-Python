@@ -236,18 +236,18 @@
 #         largest = element
    
 # print(largest)
-
-my_list = [ 17, 3, 11, 5, 1, 9, 7, 15, 13]
-found = -1
-for index in range(len(my_list)):
-    if my_list[index] == 5:
-        print("5 is found at ", index)
-        found = index
-        break
-    if found < 0:
-        print("Element not found")
-    else:
-        print("Element is found at :", found)
+''''''''''problem of searching numbers in list'''
+# my_list = [ 17, 3, 11, 5, 1, 9, 7, 15, 13]
+# found = -1
+# for index in range(len(my_list)):
+#     if my_list[index] == 5:
+#         print("5 is found at ", index)
+#         found = index
+#         break
+#     if found < 0:
+#         print("Element not found in the list")
+#     else:
+#         print("Element is found at :", found)
 
         
 

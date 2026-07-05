@@ -1,3 +1,7 @@
+'''''''''''''''''''''''''''''''''''''''''git commands '''
+# git add *
+# git commit -m "Explaint the commit here"
+# git push
 ''''Loops'''
 
 # while True:
