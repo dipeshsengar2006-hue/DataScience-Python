@@ -200,3 +200,79 @@
 # print(("|" + " " * 10 + "|\n" ) * 5,end="")
 # print("+" + "-" * 10 + "+")
 
+''' Strings'''
+# city = 'BHOPAL' 
+# #       012345   <--- index positions 
+# #      -6-5-4-3-2-1  <---- negative indices(from end to start )
+
+# print(city[0])   #B  (first charachter)
+# print(city[-6])  #B
+# print(city[2])   #O
+# print(city[-1])  #L
+# print(city[-3])  #P
+
+
+
+"""""tools or functions in pythons"""
+
+# #Strip whitespace 
+# print(text.strip()) # Hello Python World
+
+# #Search 
+# print('pyhton in text')   #True
+# print(text.find('python')) #8 (index where found)
+# print(text.count('l')) # 3
+# str = "hello how are you "
+# print(str.capitalized()) #Hello how are you 
+
+# text = ' Hello python world! '
+# print(text.upper())   # HELLO PYTHON WORLD!
+# print(text.lower())   # hello python world!
+# print(text.title())   # Hello Python World!
+# print(text.capitalize()) # hello python world
+
+# #Replace 
+# print(text.replace('Phython', 'AI'))   # Hello AI World!
+
+# #Split and join 
+# csv = 'Rahul,22,Bhopal,Engineer'
+# parts = csv.split(',')  # ['Rahul, '22', 'Nhopal', 'Engineer'
+# print("parts: ",parts)
+# print(parts[0])
+# rejoined = ' | '.join(parts) # 'Rahul | 22 | Bhopal | Engineer'
+# print("rejoined: ", rejoined)
+
+# #check content
+# print('hello123'.isalnum())  #True - all letters/difits
+# print('hello123*'.isalnum())  ##True - all letters/difit
+# print('12345'.isdigit())  # True - all digits
+# print('Python'.isalpha())  # True - all letters
+# print(' '.isspace())  # True - all spaces
+
+# #start/end check
+# email = 'student@gmail.com'
+# #a@b.c
+# print(email.endswith('.com')) #True
+# print(email.startswith('stu')) #True
+
+# name, marks, rank = 'Anita', 92.567, 3
+# print(name, marks, rank)
+
+# #Basic
+# print(f'Hello, {name}!')
+
+# #Formate numbers
+# print(f'Marks: {marks:.2f}')  #92.57(2 decimal places)
+# print(f'Marks: {marks:.0f}')  #93   (rounded)
+# print(f'Count: {1000000:,}')  #1,00,000 (comma seperator)
+
+# #Padding and aligment
+# print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}') #left/right align
+# #Anita            |          92.57|Rank:3
+# #ye <15 = 15 character jis side muh khula hai uss side se lega same concept  >8 
+# name = "Aditya Gupta"
+# print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')  #left/right align
+
+# #Expression inside {}
+# price, gst, = 500, 0.18
+# print(f'price:Rs.{price}   | GST:Rs.{price*gst:.2f}   | Total:Rs.{price*(1+gst):.2f}')
