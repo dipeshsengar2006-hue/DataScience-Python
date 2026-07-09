@@ -2,7 +2,222 @@
 # git add *
 # git commit -m "Explaint the commit here"
 # git push
+
+'''''''''|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||'''
+#((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((for loop
+
+# Jab tumhe pata hai kitni baar repeat karna hai ya kis collection (string, list, range) ke har element par jana hai.
+
+# Examples:
+
+# 1 se 10 tak print karna.
+# String ke har letter ko dekhna.
+# List ke har item ko process karna.
+
+# Think:
+
+# "Mujhe har item dekhna hai."
+
+#(((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((9while loop
+
+# Jab tumhe nahi pata kitni baar repeat hoga.
+
+# Repeat tab tak hoga jab tak condition true hai.
+
+# Examples:
+
+# Password sahi aane tak.
+# Game khatam hone tak.
+# Blocks khatam hone tak.
+# Pyramid question.
+
+# Think:
+
+# "Jab tak condition true hai, tab tak."
+
+# Kya mujhe number of iterations pata hai?
+
+# YES → for
+# Print 1-10
+
+# for i in range(10):
+
+# Exactly 10 times.
+
+# NO → while
+# Password
+
+# while password != "admin":
+# Kitni baar chalega?
+
+# Pata hi nahi.
+
+# Isliye while.
+
+# for variable in something:
+
+# Yeh "something" kya ho sakta hai?
+
+#  (((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((Ab FOR loop ko deeply samjho
+# range()
+# string
+# list
+# tuple
+# etc.
+
+# Example 2
+# for i in range(5):
+#     print(i)
+# i = 0
+# i = 1
+# i = 2
+# i = 3
+# i = 4
+# Output:
+# H
+# E
+# L
+# L
+# O
+
+# Yahan len() ki zarurat hi nahi hai.
+
+# Phir len() kab use karte hain?
+
+# Jab tumhe position (index) chahiye.
+
+# Example
+
+# HELLO
+
+# 0 1 2 3 4
+
+# Suppose mujhe third letter change karna hai.
+# Tab index chahiye.
+# To use
+
+# for i in range(len(name)):
+
+# Step by step
+
+
+# len(name)
+# ↓
+# 5
+# ↓
+# range(5)
+# ↓
+# 0 1 2 3 4
+
+# Ab
+
+# i=0
+# name[i]
+# ↓
+# H
+
+# i=1
+# ↓
+# E
+# i=2
+# ↓
+# L
+# etc.
+
+# Difference
+
+# Without len
+
+# for letter in name:
+
+# Tumhare paas
+
+# H
+
+# E
+
+# L
+
+# milta hai.
+# Index nahi milta.
+
+# (((((((With len))))
+
+# for i in range(len(name)):
+
+# Tumhare paas
+# 0
+# 1
+# 2
+# milta hai.
+
+# Aur
+# name[i]
+# likh ke letter bhi le sakte ho.
+
+
+#((((((((((((((((((((((((((((((((((((((((('''Kab konsa use karna?'''))))))))))
+
+# Sirf read karna?
+# HELLO
+# ↓
+# H
+# ↓
+# E
+# ↓
+# L
+# (((((((((((((((((((((((((((((((((((((((((((((((Use))))))))))))))))))))))))))))
+# for letter in name:
+
+#((((((((((((((((((((((((((((((((((((((((((((((Position bhi chahiye?))))))))))))))))))
+
+# Use
+
+# for i in range(len(name)):
+
+
+
+# Searching)))))))))))))))))))))))))))
+
+# Suppose
+
+# HELLO
+
+# Find O
+
+# Method 1
+
+# for letter in name:
+
+#     if letter=="O":
+
+# Simple.
+# Need index?
+
+# for i in range(len(name)):
+
+#     if name[i]=="O":
+
+# Now output
+
+# Found at index 4
+
+
+
+
+
+
+'''''''''''''''''''''||||||||||||||||||||||||||||||||||||||'''
+
+# name = "HELLO"
+
+# for letter in name:
+#     print(letter)
+ 
 ''''Loops'''
+
+
+
 
 # while True:
 #     print("I'm stuck inside loop.")
@@ -101,14 +316,23 @@
 #     else:
 #         print("Leap year")
 
+""""practice question """
+
+# power = 1
+# for expo in range(16):
+#     print("2 to the  power of", expo, "is", power)
+#     power *= 2
+
+
+
 '''for loop ''''''''(when range is known) '''
 '''''''''''''''''''''''''''''''''''''''''''''''''''' Break in for loop '''''''''''''''''''''''''''''''''
-# print("The break instructions: ");
-# for counter in range(1, 6):
-#     if counter == 3:
-#         break
-#     print("Inside the loop. ", counter)
-# print("Output the loop. ")
+print("The break instructions: ");
+for counter in range(1, 6):
+    if counter == 3:
+        break
+    print("Inside the loop. ", counter)
+print("Output the loop. ")
 
 '''''''''''''''''''''''''''''''''''''''''extra for loop questions'''
 #fruits = ["apple", "banana", "cherry"]
