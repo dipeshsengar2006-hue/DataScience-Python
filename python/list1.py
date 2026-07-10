@@ -44,6 +44,19 @@
 # numbers = [111, 7, 2, 1, " "]
 # print(numbers[-1])
 
+''' how to print adresss of  variable and variable's number '''
+# numbers = [10, 5, 7, 2, 1]
+# a = 10
+
+# print("variable a: ", a)
+# print("Adress of variable a in integer: ", id(a))
+# print("Adress of variable a in integer: ", hex(id(a)))
+
+# print(hex(id(numbers)))
+# print(hex(id(numbers[0])))
+# print(hex(id(numbers[1])))
+# print(hex(id(numbers[2])))
+
 """""question 1"""
 # numbers = [ 1, 2, 3, 4, 5]
 # print(len(numbers))
@@ -249,6 +262,59 @@
 #     else:
 #         print("Element is found at :", found)
 
-        
 
 
+'''append means last mai add hona '''
+'''insert means 2 chizo ke beech or at the begnning kuch add karna '''
+
+
+# list = [5, 4, 3, 2, 1]
+# print(len(list))
+# print(list)
+
+# list.append(6)
+# print(len(list))
+# print(list)
+
+# list.insert(0, 222)
+# print(len(list))
+# print(list)
+
+
+'''practice question'''
+'''There once was a hat. The hat contained no rabbit, but a list of five numbers: 1, 2, 3, 4, and 5.
+Your task is to:
+write a line of code that prints the length of the existing list (Step 1).
+write a line of code that removes the last element from the list (Step 2)
+write a line of code that prompts the user to replace the middle number in the list with an integer number entered by the user (Step 3)'''
+# hat = [ 1, 2, 3, 4, 5]
+# print(len(hat))
+# del hat[-1]
+# print(hat)
+# middle = len(hat) // 2
+# hat[middle] = int(input("Enter your number: "))
+# print(hat)
+
+
+'''traversing = puri list ko dekhna and usse print kara dena'''
+# list = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# for index in range(len(list)):
+#     print(index) # ye index print karayega
+#     print(list[index])
+
+# list = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# for index in list:
+#     print(index)
+'''now traversing by while loop'''
+# list = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# index = 0 
+# while index < len(list):
+#     print(list[index])
+#     index += 1
+
+'''practice question'''
+list = []
+for i in range(21, 32):
+    list.append(i)
+print(list)
