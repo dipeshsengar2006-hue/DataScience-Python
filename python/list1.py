@@ -314,7 +314,49 @@ write a line of code that prompts the user to replace the middle number in the l
 #     index += 1
 
 '''practice question'''
-list = []
-for i in range(21, 32):
-    list.append(i)
-print(list)
+# list = []
+# for index in range(21, 32):
+#     list.append(index)   # if we didnt give 21 at start and 0 se print ho jaye toh apn =   list.append(index + 1)
+# print(list)
+
+'''practice question'''
+# list1 = [10, 20, 30, 40, 50, 60, 70 ,80, 90, 100]
+# for index in range(len(list1)):
+#     list1[index] += 1
+# print(list1)
+
+'''practice question'''
+# list1 = [10, 20, 30, 40, 50, 60, 70 ,80, 90, 100]
+# sum = 0
+# for index in list1:
+#     sum += index
+# print("sum is : ", sum)
+
+'''practice question'''
+# list1 = [10, 20, 30, 40, 50, 60, 70 ,80, 90, 100]
+# index = 0
+# for abc in list1:
+#     print("list1[", index, "]=>", abc)
+#     index += 1
+'''practice question  swapping'''
+# a = 10
+# b = 20
+# print("a : ", a)
+# print("b : ", b)
+# print("-------------")
+# temp = b
+# b = a
+# a = temp
+# print("a : ", a)
+# print("b : ", b)
+""" or """
+# a, b = b, a
+# print("a : ", a)
+# print("b : ", b)
+
+'''practice question  swapping in list'''
+list1 = [10, 20, 30, 40, 50, 60, 70 ,80, 90, 100]
+print(list1)
+""" swap - 2nd and 5th values"""
+list1[1], list1[4] = list1[4], list1[1]
+print(list1)
