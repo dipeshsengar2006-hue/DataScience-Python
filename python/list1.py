@@ -355,8 +355,8 @@ write a line of code that prompts the user to replace the middle number in the l
 # print("b : ", b)
 
 '''practice question  swapping in list'''
-list1 = [10, 20, 30, 40, 50, 60, 70 ,80, 90, 100]
-print(list1)
-""" swap - 2nd and 5th values"""
-list1[1], list1[4] = list1[4], list1[1]
-print(list1)
+# list1 = [10, 20, 30, 40, 50, 60, 70 ,80, 90, 100]
+# print(list1)
+# """ swap - 2nd and 5th values"""
+# list1[1], list1[4] = list1[4], list1[1]
+# print(list1)

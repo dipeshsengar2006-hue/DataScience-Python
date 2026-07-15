@@ -121,21 +121,64 @@ Note: the height is measured by the number of fully completed layers –
 if the builders don't have a sufficient number of blocks and cannot 
 complete the next layer, they finish their work immediately.'''
 
-blocks = int(input("Enter the number of blocks: "))
-height = 0 
-layer = 1
-while blocks >= layer:
-    blocks = blocks - layer
-    #imagine 10 blocks u have
-    # Tumne 1 block use kar diya.
-    # Ab kitne bache?
-    # 10 - 1 = 9 
-    # means 9 blocks remaing 
-    #thats why we done block - layers
-    height += 1
-    layer += 1
-print("Height of pyramids is: ", height)
-print("Remaining blocks:", blocks)
+# blocks = int(input("Enter the number of blocks: "))
+# height = 0 
+# layer = 1
+# while blocks >= layer:
+#     blocks = blocks - layer
+''''' #imagine 10 blocks u have
+     # Tumne 1 block use kar diya.
+     # Ab kitne bache?
+     # 10 - 1 (layers) = 9 
+     # means 9 blocks remaing 
+     #thats why we done [ block - layers ]'''
+#     height += 1
+#     layer += 1
+# print("Height of pyramids is: ", height)
+# print("Remaining blocks:", blocks)
+
+
+'''Assignment Question: 6'''
+
+
+'''In 1937, a German mathematician named Lothar Collatz formulated an intriguing hypothesis (it still remains unproven) 
+which can be described in the following way:
+1. take any non-negative and non-zero integer number and name it c0;
+2. ⁠if it's even, evaluate a new c0 as c0 ÷ 2;
+3. ⁠otherwise, if it's odd, evaluate a new c0 as 3 × c0 + 1;
+4. ⁠if c0 ≠ 1, go back to point 2.
+The hypothesis says that regardless of the initial value of c0, it will always go to 1.
+Of course, it's an extremely complex task to use a computer in order to prove the hypothesis for any natural number '
+'(it may even require artificial intelligence), but you can use Python to check some individual numbers. '
+'Maybe you'll even find the one which would disprove the hypothesis.
+Write a program which reads one natural number and executes the above steps as long as c0 remains different from 1. 
+We also want you to count the steps needed to achieve the goal. Your code should output all the intermediate values of c0, too.
+Hint: the most important part of the problem is how to transform Collatz's idea into a while loop – this is the key to success. '''
+
+# c0 = int(input())  
+# steps = 0 
+# while c0 != 1:  
+#     if c0 %2 == 0:  
+#         c0 = c0/2  
+#     else:  
+#        c0= 3* c0 + 1  
+#     print(c0)  
+#     steps += 1  
+# print("Steps =", steps)
+
+
+'''Assignment Question: 7'''
+
+'''The Beatles were one of the most popular music groups of the 1960s, and the best-selling band in history. 
+Some people consider them to be the most influential act of the rock era. Indeed, 
+they were included in Time magazine's compilation of the 20th Century's 100 most influential people.
+The band underwent many line-up changes, culminating in 1962 with the line-up of John Lennon, Paul McCartney, George Harrison, 
+and Richard Starkey (better known as Ringo Starr).
+Write a program that reflects these changes and lets you practice with the concept of lists. Your task is to:
+step 1: create an empty list named beatles;step 2: use the append() method to add the following members of the band to the 
+list: John Lennon, Paul McCartney, and George Harrison;step 3: use the for loop and the append() method to prompt the user to add 
+the following members of the band to the list: Stu Sutcliffe, and Pete Best;step 4: use the del instruction to remove Stu Sutcliffe 
+and Pete Best from the list;step 5: use the insert() method to add Ringo Starr to the beginning of the list.'''
 
 
 

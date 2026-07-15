@@ -217,7 +217,8 @@
 ''''Loops'''
 
 
-
+ 
+''''   while Loops   '''
 
 # while True:
 #     print("I'm stuck inside loop.")
@@ -327,12 +328,12 @@
 
 '''for loop ''''''''(when range is known) '''
 '''''''''''''''''''''''''''''''''''''''''''''''''''' Break in for loop '''''''''''''''''''''''''''''''''
-print("The break instructions: ");
-for counter in range(1, 6):
-    if counter == 3:
-        break
-    print("Inside the loop. ", counter)
-print("Output the loop. ")
+# print("The break instructions: ");
+# for counter in range(1, 6):
+#     if counter == 3:
+#         break
+#     print("Inside the loop. ", counter)
+# print("Output the loop. ")
 
 '''''''''''''''''''''''''''''''''''''''''extra for loop questions'''
 #fruits = ["apple", "banana", "cherry"]

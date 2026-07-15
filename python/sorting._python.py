@@ -8,35 +8,33 @@
 # my_list = [8, 10, 6, 2, 4]
 # print(my_list)
 # count = 0
-# for index1 in range(len(my_list)-1):
-#     for index in range(len(my_list)-1-index1):
+# for index1 in range(len(my_list)-1):                  #4
+#     for index in range(len(my_list)-1-index1):        #4 (1, 2, 3, 4) ==> 16
 #  #phele jayada chal rha tha coz jo last ke elements hai already sorted unhe bhi check kar raha ttha but ( index - 1) se kam ho gaya 
 #         count+=1
 #         if(my_list[index] > my_list[index + 1]):
 #             my_list[index], my_list[index + 1] = my_list[index + 1], my_list[index]
 
 # print(my_list)
-# print("My program has run for:", count, "times")
+# print("My program has run for:", count, "times")  #10 times 
 
 
 ''''' now if alrdey sorted ho aur kam chale'''
-# my_list = [8, 10, 6, 2, 4]
-# swapped = 0
+# my_list = [1, 2, 3, 4, 5, 6]
+# swapped = False
 # print(my_list)
 # count = 0
 # for index1 in range(len(my_list)-1):
-#     for index in range(len(my_list)-1-index1):
-#  #phele jayada chal rha tha coz jo last ke elements hai already sorted unhe bhi check kar raha ttha but ( index - 1) se kam ho gaya 
-#         count+=1
+#     for index in range(len(my_list)-1-index1): #phele jayada chal rha tha coz jo last ke elements hai already sorted unhe bhi check kar raha ttha but ( index - 1) se kam ho gaya 
 #         if(my_list[index] > my_list[index + 1]):
 #             my_list[index], my_list[index + 1] = my_list[index + 1], my_list[index]
-#             swapped = 1
-#     if swapped == 0:
+#             swapped = True
+#         count+=1
+#     if not swapped:
 #         break
 
 # print(my_list)
 # print("My program has run for:", count, "times")
-
 ''' now from while loop bubble sorting  '''
 # my_list = [8, 10, 6, 2, 4]
 # swapped = True  #its a little fake ,we need it to enter the while loop
@@ -85,3 +83,49 @@
 # my_list = [8, 10, 6, 2, 4]
 # my_list.reverse()
 # print(my_list)
+
+# lst = ["D", "F", "A", "Z"]
+# lst.sort()  """or""" #print(sorted(lst))
+# print(lst)
+"""in & not in membership operator"""
+# lst = [0, 3, 12, 8, 2]
+# print(5 in lst)       #False
+# print(5 not in lst)   #True
+# print(12 in lst)      #True
+
+"""largest element"""
+# lst = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+
+'''find specific element'''
+#lst = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""List Comprehention"""
+# row = []
+# for x in range(8):
+#     row.append("WHITE_PAWN")
+# print(row)
+"""but in list Comprehention"""""
+# row = ["WHITE_PAW" for x in range(8)]
+# print(row)
+
+"""square list Comprehention """
+# square = [x ** 2 for x in range(10)]
+# print(square) #[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+#'"""""'' 0**2, 1**2, 2**2, 3**2.........9**2'''
+
+"""2 ki power  list Comprehention"""
+# twos = [ 2 ** x for x in range(8)]  
+# print(twos) #[1, 2, 4, 8, 16, 32, 64, 128]
+##''' 2**0, 2**1, 2**2, 2**3.........2**9'''
+
+"""odd list Comprehention"""
+#[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+# odds = [x for x in square if x % 2 != 0]
+# print(odds) # [1, 9, 25, 49, 81]
+
+"""list of list Comprehention"""
+board = []
+for i in range(8):
+    row = ["EMPTY" for i in range(8)]
+    board.append(row)
+print(board)

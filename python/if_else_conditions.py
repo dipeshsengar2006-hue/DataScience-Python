@@ -48,13 +48,13 @@
 # print("The largest number is: ", larger_number)
 
 
-n1 = int(input("Enter the first number: "))
-n2 = int(input("Enter the second number: "))
-n3 = int(input("Enter the third number: "))
-# we already giver largest position too n1
-largest = n1
-if n2 > largest:
-    largest = n2
-if n3 > largest:
-    largest = n3
-print("Largest number is: ", largest)
+# n1 = int(input("Enter the first number: "))
+# n2 = int(input("Enter the second number: "))
+# n3 = int(input("Enter the third number: "))
+# # we already giver largest position too n1
+# largest = n1
+# if n2 > largest:
+#     largest = n2
+# if n3 > largest:
+#     largest = n3
+# print("Largest number is: ", largest)

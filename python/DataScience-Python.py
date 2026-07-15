@@ -241,32 +241,53 @@
 # str = "hello how are you "
 # print(str.capitalized()) #Hello how are you 
 
-text = ' Hello python World!'
+# text = ' Hello python World!'
 
-#Replace 
-print(text.replace('Phython', 'AI'))   # Hello AI World!
+# #Replace 
+# print(text.replace('Phython', 'AI'))   # Hello AI World!
 
-#Split and join 
-csv = 'Rahul,22,Bhopal,Engineer'
-parts = csv.split(',')  # ['Rahul, '22', 'Nhopal', 'Engineer'
-print("parts: ",parts)
-print(parts[0])
-rejoined = ' | '.join(parts) # 'Rahul | 22 | Bhopal | Engineer'
-print("rejoined: ", rejoined)
+# #Split and join 
+# csv = 'Rahul,22,Bhopal,Engineer'
+# parts = csv.split(',')  # ['Rahul, '22', 'Nhopal', 'Engineer'
+# print("parts: ",parts)
+# print(parts[0])
+# rejoined = ' | '.join(parts) # 'Rahul | 22 | Bhopal | Engineer'
+# print("rejoined: ", rejoined)
 
-#check content
-print('hello123'.isalnum())  #True - all letters/difits
-print('hello123*'.isalnum())  ##True - all letters/difit
-print('12345'.isdigit())  # True - all digits
-print('Python'.isalpha())  # True - all letters
-print(' '.isspace())  # True - all spaces
+# #check content
+# print('hello123'.isalnum())  #True - all letters/difits
+# print('hello123*'.isalnum())  ##True - all letters/difit
+# print('12345'.isdigit())  # True - all digits
+# print('Python'.isalpha())  # True - all letters
+# print(' '.isspace())  # True - all spaces
 
-#start/end check
-email = 'student@gmail.com'
-#a@b.c
-print(email.endswith('.com')) #True
-print(email.startswith('stu')) #True
+# #start/end check
+# email = 'student@gmail.com'
+# #a@b.c
+# print(email.endswith('.com')) #True
+# print(email.startswith('stu')) #True
 
+# name, marks, rank = 'Anita', 92.567, 3
+# print(name, marks, rank)
+
+# #Basic
+# print(f'Hello, {name}!')
+
+# #Formate numbers
+# print(f'Marks: {marks:.2f}')  #92.57(2 decimal places)
+# print(f'Marks: {marks:.0f}')  #93   (rounded)
+# print(f'Count: {1000000:,}')  #1,00,000 (comma seperator)
+
+# #Padding and aligment
+# print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}') #left/right align
+# #Anita            |          92.57|Rank:3
+# #ye <15 = 15 character jis side muh khula hai uss side se lega same concept  >8 
+# name = "Aditya Gupta"
+# print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')  #left/right align
+
+# #Expression inside {}
+# price, gst, = 500, 0.18
+# print(f'price:Rs.{price}   | GST:Rs.{price*gst:.2f}   | Total:Rs.{price*(1+gst):.2f}')
 
 
 
@@ -677,4 +698,16 @@ print(email.startswith('stu')) #True
 # print(my_list)
 
 """""""'''''''''''''''''''sorting"""
-list1 = [8, 10, 6, 2, 4]
+# list1 = [8, 10, 6, 2, 4]
+
+''' logical operations'''
+
+# i = 1
+# j = not not i
+# print(i)
+# print(j)
+
+'''
+Truthy: 1, 2, 3, -1, -20, "a", "Hello", [1, 2], {1:1}, " "
+Falsy:  0, "", [], {}, None, Null
+'''
