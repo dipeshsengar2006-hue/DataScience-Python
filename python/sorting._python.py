@@ -124,8 +124,8 @@
 # print(odds) # [1, 9, 25, 49, 81]
 
 """list of list Comprehention"""
-board = []
-for i in range(8):
-    row = ["EMPTY" for i in range(8)]
-    board.append(row)
-print(board)
+# board = []
+# for i in range(8):
+#     row = ["EMPTY" for i in range(8)]
+#     board.append(row)
+# print(board)

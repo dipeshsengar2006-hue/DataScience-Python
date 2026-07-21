@@ -360,3 +360,91 @@ write a line of code that prompts the user to replace the middle number in the l
 # """ swap - 2nd and 5th values"""
 # list1[1], list1[4] = list1[4], list1[1]
 # print(list1)
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""List Comprehention"""
+# row = []
+# for x in range(8):
+#     row.append("WHITE_PAWN")
+# print(row)
+"""but in list Comprehention"""""
+# row = ["WHITE_PAW" for x in range(8)]
+# print(row)
+
+"""square list Comprehention """
+# square = [x ** 2 for x in range(10)]
+# print(square) #[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+#'"""""'' 0**2, 1**2, 2**2, 3**2.........9**2'''
+
+"""2 ki power  list Comprehention"""
+# twos = [ 2 ** x for x in range(8)]  
+# print(twos) #[1, 2, 4, 8, 16, 32, 64, 128]
+##''' 2**0, 2**1, 2**2, 2**3.........2**9'''
+
+"""odd list Comprehention"""
+#[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+# odds = [x for x in square if x % 2 != 0]
+# print(odds) # [1, 9, 25, 49, 81]
+
+"""list of list Comprehention"""
+# board = []
+# for i in range(8):
+#     row = ["EMPTY" for i in range(8)]
+#     board.append(row)
+
+# print(board)
+
+# board[0][0] = "ROOk"
+# board[0][7] = "ROOk"
+# board[7][0] = "ROOk"
+# board[7][7] = "ROOk"
+
+# board[0][1] = "KNIGHT"
+# board[0][6] = "KNIGHT"
+# board[7][1] = "KNIGHT"
+# board[7][6] = "KNIGHT"
+
+# for index in range(len(board)):
+#     print(board[index])
+
+"""""practice question list Comprehention temprature recorder"""
+# temps = [[0.0 for h in range(24)] for d in range(31)]
+# #print(temp)
+
+# random = [20, 34, 44, 12, 34, 20, 34, 44, 12, 34, 20, 34, 44, 12, 34, 20, 34, 44, 12, 34, 20, 34, 44, 12, 34, 20, 34, 44, 12, 34, 10]
+# print(len(random))
+
+# for index in range(len(temps)):
+#     temps[index][11] = random[index]
+# for index in range(len(temps)):
+#     print(temps[index])
+# #calculate avg tem of the month
+# sum = 0
+# for index in range(len(temps)):
+#     sum += temps[index][11]
+# print("avg of temps is : ", sum/31)
+
+#calculate highest  tem of the month
+# highest = temps[0] 
+# for index in range(len(temps)):
+#     if highest > temps[index]:
+#      print("highest value is : ", highest)
+#     else:
+#         highest = temps[index]
+#         print("highest value is : ", highest)]]]]]]]]]]]]] ye maine galat kiy ahai niche wala sahi hai 
+
+# highest = 0
+# for index in range(len(temps)):
+#     for inner_index in range(len(temps[index])):
+#         if highest < temps[index][inner_index]:
+#             highest = temps[index][inner_index]
+
+# print(highest)
+
+'''practice question of 3 hotels 15 floor 20 room?per floor '''
+rooms = [[[False for r in range(20)] for f in range(15)] for t in range]
+
+for building_index in range(len(rooms)):
+    print("Building ", building_index + 1)
+    for floor_index in range(len(rooms[building_index])):
+        print("Floor:", floor_index + 1)
+        print(rooms[building_index][floor_index])
