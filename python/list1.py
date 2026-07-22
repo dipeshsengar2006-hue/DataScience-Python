@@ -441,10 +441,42 @@ write a line of code that prompts the user to replace the middle number in the l
 # print(highest)
 
 '''practice question of 3 hotels 15 floor 20 room?per floor '''
-rooms = [[[False for r in range(20)] for f in range(15)] for t in range]
+rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
 
 for building_index in range(len(rooms)):
     print("Building ", building_index + 1)
     for floor_index in range(len(rooms[building_index])):
         print("Floor:", floor_index + 1)
         print(rooms[building_index][floor_index])
+
+# in the second building, on the tenth floor, room 14:
+rooms[1][9][13] = True 
+# [building] [ floor] [rooms]
+
+# and release the second oom on the fifth floor located in the first building:
+rooms[0][4][1] = False
+
+#checks if there are any vacancies on the 15th floor of the third building 
+'''
+bulding:     [3] = 1 
+floors:      [15]= 1
+rooms:       [20]= 20
+'''
+rooms[2][14][0] = True
+rooms[2][14][1] = True
+rooms[2][14][2] = True
+rooms[2][14][3] = True
+rooms[2][14][4] = True
+rooms[2][14][5] = True
+
+temp = -1
+for room_index in range(len(rooms[2][4])):
+    if rooms[2][14][room_index] == False:
+        temp = room_index 
+        break
+   #ye dikhane ke liye hai bass #print(rooms[2][14][room_index])
+
+if temp == -1:
+    print("No Rooms available!")
+else:
+    print(f'{temp+1}th Room is Available!')
