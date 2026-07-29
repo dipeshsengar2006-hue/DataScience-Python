@@ -74,11 +74,122 @@
 # print(type(tup)) # outputs: <class 'tuple'>
 
 '''swapping in tupple'''
-var = 123
-t1 = (1) 
-t2 = (2) 
-t3 = (3, var) 
-t1, t2, t3 = t2, t3, t1 
-print(t1, t2, t3)
+# var = 123
+# t1 = (1, ) 
+# t2 = (2, )
+# t3 = (3, var)
+# t1, t2, t3 = t2, t3, t1 
+# print(t1, t2, t3)
 
 ''''''
+# dictionary = {
+#     "cat": "chat", 
+#     "dog": "chien", 
+#     "horse": "cheval"   
+#     } 
+# phone_numbers = {
+#     'boss': 5551234567, 
+#     'Suzy': 22657854310
+#     } 
+# empty_dictionary = {}
+# print("dictionary: ", dictionary)
+# print("type(dictionary): ", type(dictionary))  
+# print("phone_numbers: ",phone_numbers) 
+# print("type(phone_numbers): ",type(phone_numbers)) 
+# print("empty_dictionary: ", empty_dictionary)
+# print("type(empty_dictionary): ", type(empty_dictionary)) 
+
+# '''1 - 1 element access '''
+
+# print(dictionary["cat"])
+# print(dictionary["horse"])
+
+# '''we cant use direct key word without data type  '''
+# ##example
+# cat = "catkey"
+# dog = "Dog"
+
+# my_dictionary = {
+#     cat: "cat",
+#     dog: "Dog"
+#  }
+# print(my_dictionary)
+# print(my_dictionary[cat])# it will gonna work 
+'''it is user friendly toocoz in dictionary we can do anything inside { } & it is implicit '''
+
+# dictionary = {
+#                 "cat": "chat", 
+#                 "dog": "chien", 
+#                 "horse": "cheval"   
+#              } 
+# keys = ["cat", "lion", "horse"]
+
+# for key in keys:
+#     if key in dictionary:
+#         print(key, "->", dictionary[key])
+#     else:
+#         print(key, "is not  in dictionary")
+
+''''''
+# dictionary = {
+#                 "cat": "chat", 
+#                 "dog": "chien", 
+#                 "horse": "cheval",
+#                  1:"One"   
+#              } 
+# for key in dictionary.keys():
+#     print(key)
+#     print(dictionary[key])
+
+    # if key in dictionary:
+    #     print(key, "->", dictionary[key])
+    # else:
+    #     print(key, "is not in dictionary")
+
+'''items()'''
+# dictionary = {
+#                 "cat": "chat", 
+#                 "dog": "chien", 
+#                 "horse": "cheval",
+#                  1:"One"   
+#              } 
+# print(dictionary.items())
+# print(type(dictionary.items()))
+
+# for english, french in dictionary.items():
+#     print(english, "->", french)
+'''values()'''
+
+# for french in dictionary.values():
+#     print(french)
+
+'''copy() or add with refrence like change 1 will change 2 '''
+pol_eng_dictionary = {
+
+    "zamek": "castle",
+
+    "woda": "water",
+
+    "gleba": "soil"
+
+}
+pol_eng_dictionary_copy = pol_eng_dictionary
+pol_eng_dictionary_copy2 = pol_eng_dictionary.copy()
+
+print(pol_eng_dictionary)
+print(pol_eng_dictionary_copy)
+print(pol_eng_dictionary_copy2)
+ 
+pol_eng_dictionary["One"] = 1
+print(pol_eng_dictionary)
+print(pol_eng_dictionary_copy)
+print(pol_eng_dictionary_copy2)
+
+pol_eng_dictionary["zamek"] = "lock"
+item = pol_eng_dictionary["zamek"]
+print(item) 
+print("pol_eng_dictionary: ", pol_eng_dictionary)
+del pol_eng_dictionary["zamek"]
+print("pol_eng_dictionary: ", pol_eng_dictionary)
+
+
