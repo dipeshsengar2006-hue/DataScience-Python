@@ -164,32 +164,53 @@
 #     print(french)
 
 '''copy() or add with refrence like change 1 will change 2 '''
-pol_eng_dictionary = {
+# pol_eng_dictionary = {
 
-    "zamek": "castle",
+#     "zamek": "castle",
 
-    "woda": "water",
+#     "woda": "water",
 
-    "gleba": "soil"
+#     "gleba": "soil"
 
-}
-pol_eng_dictionary_copy = pol_eng_dictionary
-pol_eng_dictionary_copy2 = pol_eng_dictionary.copy()
+# }
+# pol_eng_dictionary_copy = pol_eng_dictionary
+# pol_eng_dictionary_copy2 = pol_eng_dictionary.copy()
 
-print(pol_eng_dictionary)
-print(pol_eng_dictionary_copy)
-print(pol_eng_dictionary_copy2)
+# print(pol_eng_dictionary)
+# print(pol_eng_dictionary_copy)
+# print(pol_eng_dictionary_copy2)
  
-pol_eng_dictionary["One"] = 1
-print(pol_eng_dictionary)
-print(pol_eng_dictionary_copy)
-print(pol_eng_dictionary_copy2)
+# pol_eng_dictionary["One"] = 1
+# print(pol_eng_dictionary)
+# print(pol_eng_dictionary_copy)
+# print(pol_eng_dictionary_copy2)
 
-pol_eng_dictionary["zamek"] = "lock"
-item = pol_eng_dictionary["zamek"]
-print(item) 
-print("pol_eng_dictionary: ", pol_eng_dictionary)
-del pol_eng_dictionary["zamek"]
-print("pol_eng_dictionary: ", pol_eng_dictionary)
+# pol_eng_dictionary["zamek"] = "lock"
+# item = pol_eng_dictionary["zamek"]
+# print(item) 
+# print("pol_eng_dictionary: ", pol_eng_dictionary)
+# del pol_eng_dictionary["zamek"]
+# print("pol_eng_dictionary: ", pol_eng_dictionary)
+
+'''CRUD = create | Retrive | Upadte | Delete {list, tuple, dictionary}'''
 
 
+'''
+30 julyyyyyyyyyy
+'''
+dictionary = {}
+while True:
+    name = input("Enter Student's Name:")
+    if name != "":
+        mark = float(input(f"Enter {name}'s Score"))
+        if name not in dictionary:
+            dictionary.update({name:(mark,)})
+        else:
+            dictionary[name] = dictionary[name] + (mark, )
+    else:
+        break
+for name, marks in dictionary.items():
+    sum = 0 
+    for mark in marks:
+        sum += mark
+    print(f"{name}'s Average score is: {sum/len(marks)}")
