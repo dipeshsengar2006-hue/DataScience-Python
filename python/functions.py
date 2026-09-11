@@ -195,18 +195,25 @@
 # my_function(my_list_2)
 # print("Print #5:", my_list_2)
 ''''''
-def my_function(my_list_1, v):
-    print("Print #1:", my_list_1) # local coz andar define hua hai 
-    print("Print #2:", my_list_2) # Global coz ye aage chalkar bhar define hua hai 
-    print("v:", v)
-    print("var:", var)
-    del my_list_1[0]
-    my_list_1.append(4)
-    del v
-    print("Print #3:", my_list_1)#local
-    print("Print #4:", my_list_2)#global
+# def my_function(my_list_1, v):
+#     print("Print #1:", my_list_1) # local coz andar define hua hai 
+#     print("Print #2:", my_list_2) # Global coz ye aage chalkar bhar define hua hai 
+#     print("v:", v)
+#     print("var:", var)
+#     del my_list_1[0]
+#     my_list_1.append(4)
+#     del v
+#     print("Print #3:", my_list_1)#local
+#     print("Print #4:", my_list_2)#global
 
-my_list_2 = [2, 3] # Global list
-var = 2
-my_function(my_list_2, var)
-print("Print #5:", my_list_2)
+# my_list_2 = [2, 3] # Global list
+# var = 2
+# my_function(my_list_2, var)
+# print("Print #5:", my_list_2)
+
+''''''
+"""Lambda"""
+def add(x,y):
+    return x+y
+sum = lambda x,y:x+y
+sum(2,6)

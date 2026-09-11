@@ -198,19 +198,24 @@
 '''
 30 julyyyyyyyyyy
 '''
-dictionary = {}
-while True:
-    name = input("Enter Student's Name:")
-    if name != "":
-        mark = float(input(f"Enter {name}'s Score"))
-        if name not in dictionary:
-            dictionary.update({name:(mark,)})
-        else:
-            dictionary[name] = dictionary[name] + (mark, )
-    else:
-        break
-for name, marks in dictionary.items():
-    sum = 0 
-    for mark in marks:
-        sum += mark
-    print(f"{name}'s Average score is: {sum/len(marks)}")
+# dictionary = {}
+# while True:
+#     name = input("Enter Student's Name:")
+#     if name != "":
+#         mark = float(input(f"Enter {name}'s Score"))
+#         if name not in dictionary:
+#             dictionary.update({name:(mark,)})
+#         else:
+#             dictionary[name] = dictionary[name] + (mark, )
+#     else:
+#         break
+# for name, marks in dictionary.items():
+#     sum = 0 
+#     for mark in marks:
+#         sum += mark
+#     print(f"{name}'s Average score is: {sum/len(marks)}")
+
+'''
+3 august
+4 august
+'''
