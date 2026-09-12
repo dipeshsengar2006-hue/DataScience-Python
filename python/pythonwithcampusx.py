@@ -1,4 +1,9 @@
-"""Print functions"""
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''git commands '''
+# git add *
+# git commit -m "Explaint the commit here"
+# git push
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Print functions """
 
 # print("hello") # hello
  
@@ -22,8 +27,8 @@
     # Hello world
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Data Types (DT) """
 """
-Data Types (DT)
 1. BASIC TYPES - integer, float, boolean, complex and string
 2. CONTAINER TYPES - list, tuples, sets and dictionary
 3. USER DEFINED TYPES - Class (we will see this in oops)
@@ -50,13 +55,124 @@ Data Types (DT)
 
 ## 2.CONTAINER TYPES
 '''list'''
-print([1, 2, 3, 4, 5]) #[1, 2, 3, 4, 5]
+#print([1, 2, 3, 4, 5]) #[1, 2, 3, 4, 5]
 
 '''tuple'''
-print((1, 2, 3, 4, 5)) #(1, 2, 3, 4, 5)
+#print((1, 2, 3, 4, 5)) #(1, 2, 3, 4, 5)
 
 '''sets'''
-print({1, 2, 3, 4, 5}) #{1, 2, 3, 4, 5}
+#rint({1, 2, 3, 4, 5}) #{1, 2, 3, 4, 5}
 
 '''Dictionary'''
-print({"Name": "Dipesh", "Age": 20, "Gender": "Male"}) #{'Name': 'Dipesh', 'Age': 20, 'Gender': 'Male'}
+#print({"Name": "Dipesh", "Age": 20, "Gender": "Male"}) #{'Name': 'Dipesh', 'Age': 20, 'Gender': 'Male'}
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Variable """
+# in C language we have to declare variable first 
+# int  a = 5
+
+#But in python we do direct
+#name = 'Dipesh'
+#print(name)   # Dipesh
+
+""" Dynamic Typing """
+# We dont have to specify what type of Variable is,, it alredy understand by it self (example - python, PHP)
+# Jaise C, Java mai variable declare karna padhta hai
+""" Static Typing """
+# We have to specify what type of Variable is,,,,
+# Jaise Python mai variable declare nhi karna padhta
+
+""" Dynamic Binding """
+# name = True 
+# print(name)  # True 
+
+# name = "wow"
+# print(name) # wow
+
+#so yaha 1 hi variable baar baar diff. data type mai change ho jata hai 
+
+""" Static Binding"""
+#isme 1 hi variable k aap baar baar alagalag data type nhi de sakte if 1 baar wo int ho gaya then o gaya and if usse thik karna hai toh starting mai jaa kar phele wala change karo 
+
+
+'''special syntax  (to assin 3 variable at once)'''
+#a=3;b=4;c=6
+#print(a)
+#print(b)
+#print(c)
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Keywords """
+#### aise words jo language apne particular use ke liye le leti hai and fr wo words hum normally use nhi kart sakte to avoid confusions and all 
+#['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif',
+# 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 
+#  'raise', 'return', 'try', 'while', 'with', 'yield']
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Identifiers """
+## identifiers are name which is used to idetify variable, functions, Class, module and others 
+
+'''Rules :-'''
+#1. start with alphabet or _(underscroll)
+#2. 0, _, digits ye beech mai easily use kar sakte hai even double undersroll too 
+#3. keywords ko as a identifiers use nhi kar sakte 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Input Functions """
+# input()
+
+# input("Apna naam bata")
+# # Apna naam bata(Dipesh)
+
+# a = int(input("Enter value of a: "))
+# b = int(input("Enter value of b: "))
+# result = a + b
+# print(result)
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" Literals """
+##Literals are raw data given in variable 
+##        Now types of Literals 
+#         1. Numeric Literals
+#         2. String Literals
+#         3. Boolean Literals
+#         4. special Literals
+
+''''''''''''''' 1. Numeric Literals '''
+# a = 0b1010 #Binary Literal
+# b = 100 #Decimal Literal
+# c = 0o310 #Octal Literal 
+# d = 0x12c # Hexadecimal Literal
+
+'''Float numbers'''
+# float_1 = 10.5
+# float_2 = 1.5e2
+# float_3 = 1.5e-3
+
+'''complex numbers'''
+# x = 3.14j or 4 + 3.14j
+# print(a, b, c, d)
+# print(float_1, float_2, float_3)
+# print(x, x.imag, x.real)
+#10 100 200 300
+#10.5 150.0 0.0015
+#3.14j 3.14 0.0
+
+''''''''''''''' 2. string Literals '''
+# string = ' python '
+# strings = " python "
+# multi_strings = """ python """
+# #unicode = u"\U001f600\U001f606"#ye emoji ke liye use hota hai 
+# raw_str = r" raw \n string "
+# print(string)
+# print(strings)
+# print(multi_strings)
+# #print(unicode)
+# print(raw_str)
+
+''''''''''''''''''' 3. Boolean '''
+# a = True + 4 
+# b = False + 5
+# print("a:", a)
+# print("b:",b)
+
+'''''''''''''''''''4. special litreal '''
+# a = None
+# print(a)
