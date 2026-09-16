@@ -176,3 +176,119 @@
 '''''''''''''''''''4. special litreal '''
 # a = None
 # print(a)
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""" Operators """
+#operators
+# 1. Airthmetic Op. 
+# 2.Comparison op. 
+# 3.Logical op.
+# 4.Bitwise op.
+# 5.Assignment op.
+# 6.Identif op.
+# 7.Membership
+
+''''Airthmetic operation '''
+# x = 5
+# y = 2
+# print(x + y) #  7
+# print(x - y) #  3
+# print(x * y) #  10
+# print(x / y) #  2.5
+# print(x % y) #  1
+# print(x ** y)#  25
+# print(x // y) # 2
+
+''''Comparison op.'''
+# print(x > y) #  T
+# print(x < y) #  F
+# print(x >= y) # T
+# print(x <= y) # F
+# print(x == y) # F
+# print(x != y) # T
+
+''''' Logical op.'''
+# x = True
+# y = False
+# print(x or y) #  T
+# print(x and y) # F
+# print(not x) #   F
+# print(not y) #   T    
+
+''''' Bitwise op. '''
+# x = 2
+# y = 3
+
+# print(x & y) # 2
+# 010
+# 110
+# ---
+# 010
+
+# print(x | y) # 3
+# print(x >> 2) # 0
+# print(x << 3) #24
+# print(~x) # -3  
+
+''''' Assignment op.'''
+# a=3
+
+# a += 3
+# print(a)
+
+# a -= 3
+# print(a)
+
+# a *= 3
+# print(a)
+
+# a /= 3
+# print(a)
+
+# a &= 3
+# print(a)
+
+''''' identity op.'''
+# a = 3
+# b = 3
+# print( a is b) # True
+
+# a = "Hello"
+# b = "Hello"
+# print(a is b) # True
+
+# a =[1, 2, 3, 4, 5]
+# b =[1, 2, 3, 4, 5]
+# print(a is  b) #False
+
+# a = "Hello - world"
+# b = "Hello - world"
+# print(a is b) # True  
+
+# x = "Delhi"
+# print("D" in x) # True
+
+# b =[1, 2, 3, 4, 5]
+# print(2 in b) # True
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""" if- elif - else """
+########correct email - dieshsengar@gmail.com
+########correct password - 1234
+
+# email  = input("Enter you email: ")
+# if "@" in email:
+#     password = input("Enter your password: ")
+#     if  email == "dieshsengar@gmail.com" and password == '1234':
+#         print("Welcome")
+#     elif email == "dieshsengar@gmail.com" and password != '1234':
+#         print("Password is not valid!")
+#         password = input("Enter your password again : ")
+#         if password == '1234':
+#             print("finally its correct, Welcome")
+#         else :
+#             print("Still incorrect")
+#     else:
+#         print("tujh se nhi hoga lala ")
+# else:
+#     print("Eee tu jaa ree")
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""" indentation """
